@@ -34,8 +34,13 @@ public class RowColSortedArray {
      *                   regardless of the matrix size.
      */
     static int[] binaryArraySort(int[][] matrix, int target){
-        int row = 0;                    // start at the first row
-        int col = matrix.length - 1;    // start at the last column (assumes a square matrix)
+        // Empty matrix: nothing to search, and matrix[0] below would fail
+        if(matrix.length == 0){
+            return new int[] { -1, -1 };
+        }
+
+        int row = 0;                        // start at the first row
+        int col = matrix[0].length - 1;     // start at the last column
 
         // Loop runs at most n + m times: row only increases, col only decreases
         while(row < matrix.length && col >= 0){

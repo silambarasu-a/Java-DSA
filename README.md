@@ -6,7 +6,10 @@ A collection of Data Structures and Algorithms problems solved in Java. Each sol
 
 | Topic | Problem | Approach | Time | Space | Solution |
 |-------|---------|----------|------|-------|----------|
-| Search | Find a target in a matrix whose rows and columns are sorted | Staircase search from the top-right corner | O(n + m) | O(1) | [SortedArray.java](src/Search/BinarySearch/SortedArray.java) |
+| Search | Find a target in a matrix whose rows and columns are sorted | Staircase search from the top-right corner | O(n + m) | O(1) | [RowColSortedArray.java](src/Search/BinarySearch/RowColSortedArray.java) |
+| Search | Find a target in a fully sorted matrix, where each row is sorted and starts above the end of the row before it | Binary search the rows on the middle column, then binary search within a row | O(log n + log m) | O(1) | [FullySortedArray.java](src/Search/BinarySearch/FullySortedArray.java) |
+
+In the complexities, n is the number of rows and m is the number of columns.
 
 ## Project structure
 
@@ -16,10 +19,11 @@ Solutions are grouped by topic, then by technique:
 src/
 └── Search/
     └── BinarySearch/
-        └── SortedArray.java
+        ├── FullySortedArray.java
+        └── RowColSortedArray.java
 ```
 
-The folder path is also the Java package, so `src/Search/BinarySearch/SortedArray.java` is the class `Search.BinarySearch.SortedArray`.
+The folder path is also the Java package, so `src/Search/BinarySearch/RowColSortedArray.java` is the class `Search.BinarySearch.RowColSortedArray`.
 
 ## Running a solution
 
@@ -30,7 +34,7 @@ The folder path is also the Java package, so `src/Search/BinarySearch/SortedArra
 **Command line**, from the project root:
 
 ```sh
-javac -d out src/Search/BinarySearch/SortedArray.java
+javac -d out src/Search/BinarySearch/RowColSortedArray.java
 java -cp out Search.BinarySearch.RowColSortedArray
 ```
 
