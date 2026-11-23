@@ -10,6 +10,7 @@ A collection of Data Structures and Algorithms problems solved in Java. Each sol
 | Search | Find a target in a fully sorted matrix, where each row is sorted and starts above the end of the row before it | Binary search the rows on the middle column, then binary search within a row | O(log n + log m) | O(1) | [FullySortedArray.java](src/Search/BinarySearch/FullySortedArray.java) |
 | Sort | Sort an array in ascending order | Bubble sort: swap adjacent out-of-order pairs so the largest remaining value moves to the end on each pass | O(n²) | O(1) | [CommonBubbleSort.java](src/Sort/BubbleSort/CommonBubbleSort.java) |
 | Sort | Sort an array in ascending order | Selection sort: find the largest remaining value and swap it to the end of the unsorted part on each pass | O(n²) | O(1) | [CommonSelectionSort.java](src/Sort/SelectionSort/CommonSelectionSort.java) |
+| Sort | Sort an array in ascending order | Insertion sort: take the next element and move it left into its place in the already sorted part | O(n²) | O(1) | [CommonInsertionSort.java](src/Sort/InsertionSort/CommonInsertionSort.java) |
 
 For the matrix problems, n is the number of rows and m is the number of columns. For the array problems, n is the number of elements.
 
@@ -26,6 +27,8 @@ src/
 └── Sort/
     ├── BubbleSort/
     │   └── CommonBubbleSort.java
+    ├── InsertionSort/
+    │   └── CommonInsertionSort.java
     └── SelectionSort/
         └── CommonSelectionSort.java
 ```
