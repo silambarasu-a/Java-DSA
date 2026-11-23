@@ -11,6 +11,7 @@ A collection of Data Structures and Algorithms problems solved in Java. Each sol
 | Sort | Sort an array in ascending order | Bubble sort: swap adjacent out-of-order pairs so the largest remaining value moves to the end on each pass | O(n²) | O(1) | [CommonBubbleSort.java](src/Sort/BubbleSort/CommonBubbleSort.java) |
 | Sort | Sort an array in ascending order | Selection sort: find the largest remaining value and swap it to the end of the unsorted part on each pass | O(n²) | O(1) | [CommonSelectionSort.java](src/Sort/SelectionSort/CommonSelectionSort.java) |
 | Sort | Sort an array in ascending order | Insertion sort: take the next element and move it left into its place in the already sorted part | O(n²) | O(1) | [CommonInsertionSort.java](src/Sort/InsertionSort/CommonInsertionSort.java) |
+| Sort | Sort an array holding the numbers 1 to n, each exactly once | Cyclic sort: the value v belongs at index v − 1, so swap each element straight into its correct index | O(n) | O(1) | [CommonCyclicSort.java](src/Sort/CyclicSort/CommonCyclicSort.java) |
 
 For the matrix problems, n is the number of rows and m is the number of columns. For the array problems, n is the number of elements.
 
@@ -27,6 +28,8 @@ src/
 └── Sort/
     ├── BubbleSort/
     │   └── CommonBubbleSort.java
+    ├── CyclicSort/
+    │   └── CommonCyclicSort.java
     ├── InsertionSort/
     │   └── CommonInsertionSort.java
     └── SelectionSort/
