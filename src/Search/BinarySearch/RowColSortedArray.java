@@ -2,7 +2,7 @@ package Search.BinarySearch;
 
 import java.util.Arrays;
 
-public class SortedArray {
+public class RowColSortedArray {
     static void main(String[] args) {
         int[][] matrix = {
                 { 10, 20, 30, 40 },
