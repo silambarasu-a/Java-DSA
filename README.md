@@ -8,8 +8,9 @@ A collection of Data Structures and Algorithms problems solved in Java. Each sol
 |-------|---------|----------|------|-------|----------|
 | Search | Find a target in a matrix whose rows and columns are sorted | Staircase search from the top-right corner | O(n + m) | O(1) | [RowColSortedArray.java](src/Search/BinarySearch/RowColSortedArray.java) |
 | Search | Find a target in a fully sorted matrix, where each row is sorted and starts above the end of the row before it | Binary search the rows on the middle column, then binary search within a row | O(log n + log m) | O(1) | [FullySortedArray.java](src/Search/BinarySearch/FullySortedArray.java) |
+| Sort | Sort an array in ascending order | Bubble sort: swap adjacent out-of-order pairs so the largest remaining value moves to the end on each pass | O(n²) | O(1) | [CommonBubbleSort.java](src/Sort/BubbleSort/CommonBubbleSort.java) |
 
-In the complexities, n is the number of rows and m is the number of columns.
+For the matrix problems, n is the number of rows and m is the number of columns. For the array problems, n is the number of elements.
 
 ## Project structure
 
@@ -17,10 +18,13 @@ Solutions are grouped by topic, then by technique:
 
 ```
 src/
-└── Search/
-    └── BinarySearch/
-        ├── FullySortedArray.java
-        └── RowColSortedArray.java
+├── Search/
+│   └── BinarySearch/
+│       ├── FullySortedArray.java
+│       └── RowColSortedArray.java
+└── Sort/
+    └── BubbleSort/
+        └── CommonBubbleSort.java
 ```
 
 The folder path is also the Java package, so `src/Search/BinarySearch/RowColSortedArray.java` is the class `Search.BinarySearch.RowColSortedArray`.
