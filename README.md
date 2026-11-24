@@ -13,6 +13,7 @@ A collection of Data Structures and Algorithms problems solved in Java. Each sol
 | Sort | Sort an array in ascending order | Insertion sort: take the next element and move it left into its place in the already sorted part | O(n²) | O(1) | [CommonInsertionSort.java](src/Sort/InsertionSort/CommonInsertionSort.java) |
 | Sort | Sort an array holding the numbers 1 to n, each exactly once | Cyclic sort: the value v belongs at index v − 1, so swap each element straight into its correct index | O(n) | O(1) | [CommonCyclicSort.java](src/Sort/CyclicSort/CommonCyclicSort.java) |
 | Sort | Find the one number missing from an array of n distinct numbers in the range 0 to n | Cyclic sort: put each value v at index v, then the first index that does not hold its own value is the answer. Also solved with the sum formula: n(n + 1) / 2 minus every element | O(n) | O(1) | [MissingNumber.java](src/Sort/CyclicSort/MissingNumber.java) |
+| Sort | Find every number from 1 to n that does not appear in an array of n numbers in the range 1 to n | Cyclic sort: put each value v at index v − 1, then every index that does not hold its own value gives a missing number | O(n) | O(1) | [DisappearedNumbers.java](src/Sort/CyclicSort/DisappearedNumbers.java) |
 
 For the matrix problems, n is the number of rows and m is the number of columns. For the array problems, n is the number of elements.
 
@@ -31,6 +32,7 @@ src/
     │   └── CommonBubbleSort.java
     ├── CyclicSort/
     │   ├── CommonCyclicSort.java
+    │   ├── DisappearedNumbers.java
     │   └── MissingNumber.java
     ├── InsertionSort/
     │   └── CommonInsertionSort.java
