@@ -15,6 +15,7 @@ A collection of Data Structures and Algorithms problems solved in Java. Each sol
 | Sort | Find the one number missing from an array of n distinct numbers in the range 0 to n | Cyclic sort: put each value v at index v, then the first index that does not hold its own value is the answer. Also solved with the sum formula: n(n + 1) / 2 minus every element | O(n) | O(1) | [MissingNumber.java](src/Sort/CyclicSort/MissingNumber.java) |
 | Sort | Find every number from 1 to n that does not appear in an array of n numbers in the range 1 to n | Cyclic sort: put each value v at index v − 1, then every index that does not hold its own value gives a missing number | O(n) | O(1) | [DisappearedNumbers.java](src/Sort/CyclicSort/DisappearedNumbers.java) |
 | Sort | Find the one repeated number in an array of n + 1 numbers in the range 1 to n | Cyclic sort: put each value v at index v − 1, then the last index, which belongs to no value, holds the repeat | O(n) | O(1) | [DuplicateNumber.java](src/Sort/CyclicSort/DuplicateNumber.java) |
+| Sort | Find every number that appears twice in an array of n numbers in the range 1 to n, where each number appears once or twice | Cyclic sort: put each value v at index v − 1, then every index that does not hold its own value is holding a duplicate | O(n) | O(1) | [AllDuplicates.java](src/Sort/CyclicSort/AllDuplicates.java) |
 
 For the matrix problems, n is the number of rows and m is the number of columns. For the array problems, n is the number of elements.
 
@@ -32,6 +33,7 @@ src/
     ├── BubbleSort/
     │   └── CommonBubbleSort.java
     ├── CyclicSort/
+    │   ├── AllDuplicates.java
     │   ├── CommonCyclicSort.java
     │   ├── DisappearedNumbers.java
     │   ├── DuplicateNumber.java
