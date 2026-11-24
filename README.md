@@ -17,6 +17,7 @@ A collection of Data Structures and Algorithms problems solved in Java. Each sol
 | Sort | Find the one repeated number in an array of n + 1 numbers in the range 1 to n | Cyclic sort: put each value v at index v − 1, then the last index, which belongs to no value, holds the repeat | O(n) | O(1) | [DuplicateNumber.java](src/Sort/CyclicSort/DuplicateNumber.java) |
 | Sort | Find every number that appears twice in an array of n numbers in the range 1 to n, where each number appears once or twice | Cyclic sort: put each value v at index v − 1, then every index that does not hold its own value is holding a duplicate | O(n) | O(1) | [AllDuplicates.java](src/Sort/CyclicSort/AllDuplicates.java) |
 | Sort | Find the number that appears twice and the number that is missing in an array that should hold 1 to n | Cyclic sort: put each value v at index v − 1, then the one index that does not hold its own value holds the duplicate, and that index + 1 is the missing number | O(n) | O(1) | [SetMismatch.java](src/Sort/CyclicSort/SetMismatch.java) |
+| Sort | Find the smallest positive number that is not in an unsorted array, which may hold zeros, negatives and repeats | Cyclic sort: put each value v from 1 to n at index v − 1 and ignore everything else, then the first index that does not hold its own value gives the answer | O(n) | O(1) | [FirstMissingPositive.java](src/Sort/CyclicSort/FirstMissingPositive.java) |
 
 For the matrix problems, n is the number of rows and m is the number of columns. For the array problems, n is the number of elements.
 
@@ -38,6 +39,7 @@ src/
     │   ├── CommonCyclicSort.java
     │   ├── DisappearedNumbers.java
     │   ├── DuplicateNumber.java
+    │   ├── FirstMissingPositive.java
     │   ├── MissingNumber.java
     │   └── SetMismatch.java
     ├── InsertionSort/
